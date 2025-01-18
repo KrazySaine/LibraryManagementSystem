@@ -1,0 +1,22 @@
+﻿@model List<Book>
+<h1>Library Books</h1>
+<a href="/Library/AddBook">Add New Book</a>
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>@book.Title</td>
+                <td>@book.Author</td>
+                <td>@book.Genre</td>
+            </tr>
+        }
+    </tbody>
+</table>
