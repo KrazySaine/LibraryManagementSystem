@@ -1,0 +1,13 @@
+﻿@model IEnumerable<displayBooks.Models.Book>
+@{
+    ViewBag.Title = "Display Book List";
+
+}
+
+@foreach (var item in Model)
+{
+    <div>
+        @item.Title
+        <hr />
+    </div>
+}
